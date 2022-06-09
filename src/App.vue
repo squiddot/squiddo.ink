@@ -1,14 +1,14 @@
 <template>
-  <HelloWorld/>
+  <TV/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TV from './components/TV.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TV
   }
 }
 </script>
