@@ -6,6 +6,6 @@
 
 <style lang="scss" scoped>
 .channel {
-  outline: 1px solid deepskyblue;
+  outline: 1px solid #50fa7b;
   }
 </style>
