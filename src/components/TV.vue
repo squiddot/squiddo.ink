@@ -30,13 +30,13 @@ export default {
 
 <style lang="scss">
 .tv-screen {
-  outline: 1px solid blue;
-  background-color: deepskyblue;
+  //outline: 1px solid blue;
+  //background-color: deepskyblue;
   padding: 1.5vh 1.5vw;
   }
 .channel {
-  height: 96vh;
-  background-color: black;
+  //height: 96vh;
+  //background-color: black;
   width: 96vw;
   margin: auto;
   }

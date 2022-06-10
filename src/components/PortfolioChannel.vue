@@ -159,13 +159,13 @@ $darkhighlight: #fde74c;
 
         h2 {
           margin: 20px 0;
-          font-size: 20px;
+          font-size: 12px;
           }
 
         p {
           font-weight: normal;
           line-height: 1.5;
-          font-size: 12px;
+          font-size: 10px;
 
           &.link {
             margin: 20px 0 0;
