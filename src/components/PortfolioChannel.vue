@@ -18,15 +18,15 @@
         </div>
       </div>
       <div class="card-container">
-        <div class="card card--dark"><a href="androidupdate">
+        <div class="card card--dark"><a href="https://info.leaderboards.gg">
           <div class="card--display">
             <h2>LBGG Infosite</h2>
             <h2>Solo Dev</h2>
           </div>
           <div class="card--hover">
-            <h2>leaderboards.gg</h2>
+            <h2>leaderboards.gg 2022</h2>
             <p>Vue/Nuxt site. Scss. Landing site made for fully open source project I started, Leaderboards.gg</p>
-            <p class="link">Click to see project</p>
+            <p class="link">Click to visit site</p>
           </div>
         </a>
           <div class="card--border"></div>
@@ -42,14 +42,14 @@
           <div class="card--hover">
             <h2>CIRCOR.com 2018</h2>
             <p>Algolia Search Engine, Internal Sales Partner Microsites, CraftCMS, map that filters down to sub categories, paginated News Feed. </p>
-            <p class="link">Click to see project</p>
+            <p class="link">Click to visit site</p>
           </div>
         </a>
           <div class="card--border"></div>
         </div>
       </div>
       <div class="card-container">
-        <div class="card"><a href="worldweb">
+        <div class="card"><a href="https://smatechnologies.com/">
           <div class="card--display">
             <h2>SMA Technologies</h2>
             <h2>Dev, Team of 2</h2>
@@ -57,14 +57,14 @@
           <div class="card--hover">
             <h2>smatechnologies.com 2020</h2>
             <p>Website made for SMA. Headless Craft CMS. Multi-language site with 4 languages.</p>
-            <p class="link">Click to see project</p>
+            <p class="link">Click to visit site</p>
           </div>
         </a>
           <div class="card--border"></div>
         </div>
       </div>
       <div class="card-container">
-        <div class="card"><a href="trainthings">
+        <div class="card"><a href="https://pennebaker.com/">
           <div class="card--display">
             <h2>Pennebaker</h2>
             <h2>Dev, Team of 3</h2>
@@ -72,22 +72,22 @@
           <div class="card--hover">
             <h2>Pennebaker.com 2019</h2>
             <p></p>
-            <p class="link">Click to see project</p>
+            <p class="link">Click to visit site</p>
           </div>
         </a>
           <div class="card--border"></div>
         </div>
       </div>
       <div class="card-container">
-        <div class="card"><a href="phonesoff">
+        <div class="card"><a href="https://nineenergyservice.com/">
           <div class="card--display">
             <h2>nine</h2>
             <h2>Dev Lead, Team of 3</h2>
           </div>
           <div class="card--hover">
-            <h2>nineenergyservice.com</h2>
+            <h2>nineenergyservice.com 2019</h2>
             <p></p>
-            <p class="link">Click to see project</p>
+            <p class="link">Click to visit site</p>
           </div>
         </a>
           <div class="card--border"></div>
