@@ -5,21 +5,24 @@
         <div class="overlay">
           <slot>
 <!--            <PortfolioChannel></PortfolioChannel>-->
+                  <ResumeChannel></ResumeChannel>
+            <!--      <IndexChannel></IndexChannel>-->
+            <!--      <MenuChannel></MenuChannel>-->
+
           </slot>
         </div>
       </div>
     </main>
   </div>
-<!--      <IndexChannel></IndexChannel>-->
-<!--      <MenuChannel></MenuChannel>-->
-<!--      <ResumeChannel></ResumeChannel>-->
+
+
 </template>
 
 <script>
 // import MenuChannel from './MenuChannel.vue'
 // import IndexChannel from './IndexChannel.vue'
 // import PortfolioChannel from './PortfolioChannel.vue'
-// import ResumeChannel from './ResumeChannel.vue'
+import ResumeChannel from './ResumeChannel.vue'
 
 
 export default {
@@ -27,7 +30,7 @@ export default {
     // MenuChannel,
     // IndexChannel,
     // PortfolioChannel,
-    // ResumeChannel
+    ResumeChannel
   }
 }
 </script>
