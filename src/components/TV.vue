@@ -4,7 +4,7 @@
       <div class="screen">
         <div class="overlay">
           <slot>
-            <PortfolioChannel></PortfolioChannel>
+<!--            <PortfolioChannel></PortfolioChannel>-->
           </slot>
         </div>
       </div>
@@ -18,7 +18,7 @@
 <script>
 // import MenuChannel from './MenuChannel.vue'
 // import IndexChannel from './IndexChannel.vue'
-import PortfolioChannel from './PortfolioChannel.vue'
+// import PortfolioChannel from './PortfolioChannel.vue'
 // import ResumeChannel from './ResumeChannel.vue'
 
 
@@ -26,7 +26,7 @@ export default {
   components: {
     // MenuChannel,
     // IndexChannel,
-    PortfolioChannel,
+    // PortfolioChannel,
     // ResumeChannel
   }
 }
@@ -54,9 +54,9 @@ $screen-background: #121010;
   align-items: center;
   justify-content: center;
   }
-//.tv {
-//  padding: 1.5vh 1.5vw;
-//  }
+.tv {
+  padding: 1.5vh 1.5vw;
+  }
 body{
   background: $secondary none repeat scroll 0 0;
   margin: 0;
@@ -67,7 +67,11 @@ body{
 // background when TV is off
 .screen:before {
   background: transparent;
-
+  //linear-gradient(to bottom, #85908c 0%, #323431 100%)
+  //repeat
+  //scroll
+  //0
+  //0;
   content: "";
   @include center;
   width: 100%;
@@ -76,11 +80,11 @@ body{
   }
 // CRT scanlines
 .scanlines .overlay {
-  height: calc(100% - 100px);
-  left: 50px;
+  height: 100%;
+  left: 0;
   position: absolute;
-  top: 50px;
-  width: calc(100% - 100px);
+  top: 0;
+  width: 100%;
   z-index: 1;
   @include flexCenter;
   &:after {
@@ -108,7 +112,7 @@ body{
     );
     z-index: 2;
     background-size: 100% 2px, 3px 100%;
-    //pointer-events: none;
+    pointer-events: none;
     }
   }
 .picture {
