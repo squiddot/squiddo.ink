@@ -1,11 +1,12 @@
 <template>
+  <TVFrame></TVFrame>
   <div class="tv">
     <main ref="main" class="scanlines">
       <div class="screen">
         <div class="overlay">
           <slot>
-<!--            <PortfolioChannel></PortfolioChannel>-->
-                  <ResumeChannel></ResumeChannel>
+            <!--            <PortfolioChannel></PortfolioChannel>-->
+            <ResumeChannel></ResumeChannel>
             <!--      <IndexChannel></IndexChannel>-->
             <!--      <MenuChannel></MenuChannel>-->
 
@@ -23,6 +24,7 @@
 // import IndexChannel from './IndexChannel.vue'
 // import PortfolioChannel from './PortfolioChannel.vue'
 import ResumeChannel from './ResumeChannel.vue'
+import TVFrame from "./TVFrame.vue";
 
 
 export default {
@@ -30,7 +32,8 @@ export default {
     // MenuChannel,
     // IndexChannel,
     // PortfolioChannel,
-    ResumeChannel
+    ResumeChannel,
+    TVFrame
   }
 }
 </script>
@@ -56,9 +59,6 @@ $screen-background: #121010;
   display: flex;
   align-items: center;
   justify-content: center;
-  }
-.tv {
-  padding: 1.5vh 1.5vw;
   }
 body{
   background: $secondary none repeat scroll 0 0;
@@ -92,8 +92,10 @@ body{
   @include flexCenter;
   &:after {
     position: absolute;
+    z-index: 2;
     left: 0;
     top: 0;
+    pointer-events: none;
     width: 100%;
     height: 100%;
     background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/86186/crt.png');

@@ -56,17 +56,6 @@
 .channel {
   outline: 1px solid #50fa7b;
   }
-body {
-  background: #801638;
-  }
-
-body,
-body > * {
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
-  font-weight: normal;
-  }
 
 * {
   transition: all .3s ease 0s;
@@ -142,7 +131,7 @@ div + div article {
   width: 100%;
   text-align: center;
   padding: .5rem;
-  z-index: 2;
+  z-index: 1;
   }
 
 body > div:first-child h1,
