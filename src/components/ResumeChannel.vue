@@ -141,6 +141,10 @@ body > div:first-child h2 {
   }
 
 
+div + div article {
+  pointer-events: all;
+  // NOTE: This is super important since the parent component has pointer-events set to none.
+}
 /* Hover interaction */
 
 div + div:hover article {
@@ -150,7 +154,8 @@ div + div:hover article {
 
 div + div article:hover {
   width: 60%;
-  }
+  cursor: pointer;
+}
 
 article > div {
   opacity: 0;

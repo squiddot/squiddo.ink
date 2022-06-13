@@ -90,6 +90,8 @@ body{
   width: 100%;
   z-index: 1;
   @include flexCenter;
+  pointer-events: none;
+
   &:after {
     position: absolute;
     z-index: 2;
@@ -117,7 +119,6 @@ body{
     );
     z-index: 2;
     background-size: 100% 2px, 3px 100%;
-    pointer-events: none;
     }
   }
 .picture {
