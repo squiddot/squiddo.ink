@@ -3,8 +3,8 @@
 <!--    <h1>Resume Channel</h1>-->
     <!-- Built by Rachel Reveley https://rachelreveley.co.uk -->
     <div>
-      <h1>Resume!</h1>
-      <h2>Subheading here</h2>
+      <h1>Paused!</h1>
+      <h2>Press Play to <i>Resume</i></h2>
     </div>
     <div>
       <article>

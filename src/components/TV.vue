@@ -67,14 +67,17 @@ body{
   height: 100vh;
   width: 100vw;
   }
+.tv {
+
+  }
 // background when TV is off
 .screen:before {
   background: transparent;
-  //linear-gradient(to bottom, #85908c 0%, #323431 100%)
-  //repeat
-  //scroll
-  //0
-  //0;
+  background: linear-gradient(to bottom, #85908c 0%, #323431 100%)
+  repeat
+  scroll
+  0
+  0;
   content: "";
   @include center;
   width: 100%;
@@ -127,8 +130,8 @@ body{
   width: 100vw;
   z-index: -1;
   transform: scale(0, 0);
-  background: transparent
-  linear-gradient(to bottom, #85908c 0%, #323431 100%)
+  background: transparent;
+  background: linear-gradient(to bottom, #85908c 0%, #323431 100%)
   repeat
   scroll
   0
