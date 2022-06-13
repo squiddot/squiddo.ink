@@ -5,11 +5,10 @@
       <div class="screen">
         <div class="overlay">
           <slot>
-            <!--            <PortfolioChannel></PortfolioChannel>-->
-            <ResumeChannel></ResumeChannel>
-            <!--      <IndexChannel></IndexChannel>-->
-            <!--      <MenuChannel></MenuChannel>-->
-
+<!--            <PortfolioChannel></PortfolioChannel>-->
+<!--            <ResumeChannel></ResumeChannel>-->
+<!--            <IndexChannel></IndexChannel>-->
+<!--            <MenuChannel></MenuChannel>-->
           </slot>
         </div>
       </div>
@@ -23,7 +22,7 @@
 // import MenuChannel from './MenuChannel.vue'
 // import IndexChannel from './IndexChannel.vue'
 // import PortfolioChannel from './PortfolioChannel.vue'
-import ResumeChannel from './ResumeChannel.vue'
+// import ResumeChannel from './ResumeChannel.vue'
 import TVFrame from "./TVFrame.vue";
 
 
@@ -32,7 +31,7 @@ export default {
     // MenuChannel,
     // IndexChannel,
     // PortfolioChannel,
-    ResumeChannel,
+    // ResumeChannel,
     TVFrame
   }
 }
@@ -64,11 +63,8 @@ body{
   background: $secondary none repeat scroll 0 0;
   margin: 0;
   overflow: hidden;
-  height: 100vh;
-  width: 100vw;
-  }
-.tv {
-
+  //height: 50vh;
+  //width: 50vw;
   }
 // background when TV is off
 .screen:before {
@@ -80,17 +76,17 @@ body{
   0;
   content: "";
   @include center;
-  width: 100%;
-  height: 100%;
+  width: 96%;
+  height: 96%;
   z-index: -1;
   }
 // CRT scanlines
 .scanlines .overlay {
-  height: 100%;
-  left: 0;
+  height: 96%;
+  left: 2%;
   position: absolute;
-  top: 0;
-  width: 100%;
+  top: 2%;
+  width: 96%;
   z-index: 1;
   @include flexCenter;
   pointer-events: none;
@@ -98,11 +94,11 @@ body{
   &:after {
     position: absolute;
     z-index: 2;
-    left: 0;
-    top: 0;
+    left: 1%;
+    top: 1%;
     pointer-events: none;
-    width: 100%;
-    height: 100%;
+    width: 98%;
+    height: 98%;
     background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/86186/crt.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -125,9 +121,9 @@ body{
     }
   }
 .picture {
-  height: 100vh;
+  height: 96vh;
   overflow: hidden;
-  width: 100vw;
+  width: 96vw;
   z-index: -1;
   transform: scale(0, 0);
   background: transparent;
