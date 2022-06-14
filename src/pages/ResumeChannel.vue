@@ -122,10 +122,6 @@
 </template>
 
 <style lang="scss" scoped>
-.resume-wrapper {
-  outline: 1px solid #50fa7b;
-}
-
 * {
   transition: all 0.3s ease 0s;
 }
