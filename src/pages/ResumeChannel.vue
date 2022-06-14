@@ -1,5 +1,5 @@
 <template>
-  <div class="channel">
+  <div class="resume-wrapper">
     <!--    <h1>Resume Channel</h1>-->
     <!-- Built by Rachel Reveley https://rachelreveley.co.uk -->
     <div>
@@ -122,7 +122,7 @@
 </template>
 
 <style lang="scss" scoped>
-.channel {
+.resume-wrapper {
   outline: 1px solid #50fa7b;
 }
 
@@ -163,40 +163,40 @@ div + div {
 }
 
 div + div {
-  list-style: none;
   position: relative;
   display: flex;
+  overflow: hidden;
+  align-items: stretch;
   flex-direction: row;
   flex-wrap: nowrap;
-  align-items: stretch;
-  overflow: hidden;
+  list-style: none;
 }
 
 /* Articles */
 
 div + div article {
+  position: relative;
   flex: initial;
+  box-sizing: border-box;
   width: 20%;
   height: 100%;
-  text-align: center;
-  color: #fff;
-  text-decoration: none;
-  vertical-align: bottom;
-  box-sizing: border-box;
   padding: 2vh 1vw;
-  position: relative;
+  text-align: center;
+  vertical-align: bottom;
+  text-decoration: none;
+  color: #fff;
 }
 
 /* Big Headings */
 
-.channel > div:first-child {
+.resume-wrapper > div:first-child {
   position: fixed;
-  bottom: 8vh;
-  background: #fff;
-  width: 100%;
-  text-align: center;
-  padding: 0.5rem;
   z-index: 1;
+  bottom: 8vh;
+  width: 100%;
+  padding: 0.5rem;
+  text-align: center;
+  background: #fff;
 }
 
 body > div:first-child h1,
@@ -209,6 +209,7 @@ div + div article {
   pointer-events: all;
   // NOTE: This is super important since the parent component has pointer-events set to none.
 }
+
 /* Hover interaction */
 
 div + div:hover article {
@@ -222,31 +223,31 @@ div + div article:hover {
 }
 
 article > div {
-  opacity: 0;
   transition: opacity 0.2s ease 0;
+  opacity: 0;
 }
 
 div + div article:hover > div {
-  opacity: 1;
   transition: opacity 0.3s ease 0.3s;
+  opacity: 1;
 }
 
 /* navigation */
 
 div + div article > h2 {
-  bottom: 2vh;
+  font-size: 3vh;
   position: absolute;
-  text-align: center;
+  bottom: 2vh;
   width: 100%;
   margin: 0;
-  font-size: 3vh;
+  text-align: center;
 }
 
 /* Article layouts */
 
 article div {
-  text-align: left;
   width: 58vw;
+  text-align: left;
 }
 
 article div p,
@@ -273,12 +274,12 @@ article div p {
     padding: 2vh 3vw;
   }
   div + div article > h2 {
-    transform: rotate(90deg);
     bottom: 23vh;
     min-width: 12em;
-    text-align: left;
+    transform: rotate(90deg);
     transform: rotate(-90deg);
     transform-origin: 0 0 0;
+    text-align: left;
     opacity: 1;
   }
   div + div article:hover > h2 {
@@ -288,8 +289,8 @@ article div p {
     width: 50vw;
   }
   article div {
-    max-height: calc(72%);
     overflow-y: auto;
+    max-height: calc(72%);
   }
 }
 </style>

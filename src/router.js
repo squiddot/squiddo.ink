@@ -2,11 +2,11 @@ import { createRouter, createWebHistory } from "vue-router";
 
 // 1. Define route components.
 // These can be imported from other files
-const HelloWorld = () => import("./pages/HelloWorld.vue");
 const IndexChannel = () => import("./pages/IndexChannel.vue");
 const MenuChannel = () => import("./pages/MenuChannel.vue");
 const PortfolioChannel = () => import("./pages/PortfolioChannel.vue");
 const ResumeChannel = () => import("./pages/ResumeChannel.vue");
+const Off = () => import("./pages/Off.vue");
 
 // 2. Define some routes
 // Each route should map to a component.
@@ -14,14 +14,14 @@ const ResumeChannel = () => import("./pages/ResumeChannel.vue");
 const routes = [
   {
     path: "/",
-    name: "Home",
-    component: IndexChannel,
+    name: "Off",
+    component: Off,
     // meta: { buttonName: 'Home' }
   },
   {
-    path: "/hello",
-    name: "HelloWorld",
-    component: HelloWorld,
+    path: "/on",
+    name: "Home",
+    component: IndexChannel,
     // meta: { buttonName: 'Home' }
   },
   {
@@ -53,7 +53,7 @@ const routes = [
 // keep it simple for now.
 const router = createRouter({
   // 4. Provide the history implementation to use. We are using the hash history for simplicity here.
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(),
   routes, // short for `routes: routes`
 });
 
