@@ -26,8 +26,4 @@
   </div>
 </template>
 
-<style lang="scss" scoped>
-.channel {
-  outline: 1px solid limegreen;
-}
-</style>
+<style lang="scss" scoped></style>
