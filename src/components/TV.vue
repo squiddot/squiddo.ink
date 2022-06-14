@@ -4,11 +4,9 @@
     <main ref="main" class="scanlines">
       <div class="screen">
         <div class="overlay">
-          <RouterView></RouterView>
-          <!--            <PortfolioChannel></PortfolioChannel>-->
-          <!--            <ResumeChannel></ResumeChannel>-->
-          <!--            <IndexChannel></IndexChannel>-->
-          <!--            <MenuChannel></MenuChannel>-->
+          <div class="channel">
+            <RouterView></RouterView>
+          </div>
         </div>
       </div>
     </main>
@@ -16,18 +14,10 @@
 </template>
 
 <script>
-// import MenuChannel from './MenuChannel.vue'
-// import IndexChannel from './IndexChannel.vue'
-// import PortfolioChannel from './PortfolioChannel.vue'
-// import ResumeChannel from './ResumeChannel.vue'
 import TVFrame from "./TVFrame.vue";
 
 export default {
   components: {
-    // MenuChannel,
-    // IndexChannel,
-    // PortfolioChannel,
-    // ResumeChannel,
     TVFrame,
   },
 };
@@ -44,61 +34,68 @@ $screen-background: #121010;
   right: 0;
   content: " ";
 }
+
 @mixin center {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate3d(-50%, -50%, 0);
 }
+
 @mixin flexCenter {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 body {
-  background: $secondary none repeat scroll 0 0;
-  margin: 0;
   overflow: hidden;
+  margin: 0;
+  background: $secondary none repeat scroll 0 0;
   //height: 50vh;
   //width: 50vw;
 }
+
 // background when TV is off
 .screen:before {
+  z-index: -1;
+  width: 96%;
+  height: 96%;
+  @include center;
+  content: "";
   background: transparent;
   background: linear-gradient(to bottom, #85908c 0%, #323431 100%) repeat scroll
     0 0;
-  content: "";
-  @include center;
-  width: 96%;
-  height: 96%;
-  z-index: -1;
 }
+
 // CRT scanlines
 .scanlines .overlay {
-  height: 96%;
-  left: 2%;
   position: absolute;
-  top: 2%;
-  width: 96%;
   z-index: 1;
+  top: 2%;
+  left: 2%;
+  width: 96%;
+  height: 96%;
   @include flexCenter;
   pointer-events: none;
 
   &:after {
     position: absolute;
     z-index: 2;
-    left: 1%;
     top: 1%;
-    pointer-events: none;
+    left: 1%;
     width: 98%;
     height: 98%;
+    content: "";
+    pointer-events: none;
     background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/86186/crt.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    content: "";
   }
+
   &:before {
     @include pseudo;
+    z-index: 2;
     background: linear-gradient(
         transparentize($screen-background, 1) 50%,
         transparentize(darken($screen-background, 10), 0.75) 50%
@@ -109,15 +106,15 @@ body {
         transparentize(#00ff00, 0.98),
         transparentize(#0000ff, 0.94)
       );
-    z-index: 2;
     background-size: 100% 2px, 3px 100%;
   }
 }
+
 .picture {
-  height: 96vh;
+  z-index: -1;
   overflow: hidden;
   width: 96vw;
-  z-index: -1;
+  height: 96vh;
   transform: scale(0, 0);
   background: transparent;
   background: linear-gradient(to bottom, #85908c 0%, #323431 100%) repeat scroll
