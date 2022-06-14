@@ -38,17 +38,13 @@
     "extends": [
       "prettier",
       "eslint:recommended",
-      "plugin:vue/vue3-recommended",
-      "@vue/typescript/recommended",
-      "plugin:@typescript-eslint/recommended"
+      "plugin:vue/vue3-recommended"
     ],
     "parser": "vue-eslint-parser",
     "parserOptions": {
-      "parser": "@typescript-eslint/parser",
-      "sourceType": "module",
-      "ecmaVersion": "latest"
+      "parser": "@babel/eslint-parser"
     },
-    "plugins": ["vue", "@typescript-eslint", "prettier"],
+    "plugins": ["vue", "prettier"],
     "rules": {
       "no-fallthrough": "off",
       "prefer-const": "error",
@@ -59,10 +55,7 @@
       "vue/html-self-closing": "off",
       "vue/singleline-html-element-content-newline": "off",
       "vue/multi-word-component-names": "off",
-      "vue/html-closing-bracket-newline": "off",
-      "@typescript-eslint/no-extra-semi": "off",
-      "@typescript-eslint/no-explicit-any": "off",
-      "@typescript-eslint/ban-ts-comment": "off"
+      "vue/html-closing-bracket-newline": "off"
     }
   },
   "browserslist": [
