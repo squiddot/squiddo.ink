@@ -5,11 +5,13 @@
         <span>AV-1</span>
       </div>
       <div class="menu">
-        <header>
-          Main Menu
-        </header>
+        <header>Main Menu</header>
         <ul>
-          <li class="active"><a href="https://www.linkedin.com/in/taylorcgaines/" title="">LinkedIn</a></li>
+          <li class="active">
+            <a href="https://www.linkedin.com/in/taylorcgaines/" title=""
+              >LinkedIn</a
+            >
+          </li>
           <li><a href="" title="">Portfolio</a></li>
           <li><a href="" title="">Resume</a></li>
           <li><a href="https://github.com/squiddot" title="">Github</a></li>
@@ -20,11 +22,12 @@
           <div class="key">Select: <span>2</span></div>
         </footer>
       </div>
-    </div>  </div>
+    </div>
+  </div>
 </template>
 
 <style lang="scss" scoped>
 .channel {
   outline: 1px solid limegreen;
-  }
+}
 </style>

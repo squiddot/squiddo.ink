@@ -1,16 +1,16 @@
 <template>
-  <TV/>
+  <TV />
 </template>
 
 <script>
-import TV from './components/TV.vue'
+import TV from "./components/TV.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    TV
-  }
-}
+    TV,
+  },
+};
 </script>
 
 <style>
@@ -18,30 +18,47 @@ export default {
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
 */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 * {
   margin: 0;
 }
-html, body {
+html,
+body {
   height: 100%;
 }
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }
 
@@ -51,5 +68,4 @@ li {
   padding-left: 0;
 }
 /*End of CSS Reset*/
-
 </style>

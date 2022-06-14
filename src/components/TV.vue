@@ -4,18 +4,15 @@
     <main ref="main" class="scanlines">
       <div class="screen">
         <div class="overlay">
-          <slot>
-<!--            <PortfolioChannel></PortfolioChannel>-->
-<!--            <ResumeChannel></ResumeChannel>-->
-<!--            <IndexChannel></IndexChannel>-->
-<!--            <MenuChannel></MenuChannel>-->
-          </slot>
+          <RouterView></RouterView>
+          <!--            <PortfolioChannel></PortfolioChannel>-->
+          <!--            <ResumeChannel></ResumeChannel>-->
+          <!--            <IndexChannel></IndexChannel>-->
+          <!--            <MenuChannel></MenuChannel>-->
         </div>
       </div>
     </main>
   </div>
-
-
 </template>
 
 <script>
@@ -25,16 +22,15 @@
 // import ResumeChannel from './ResumeChannel.vue'
 import TVFrame from "./TVFrame.vue";
 
-
 export default {
   components: {
     // MenuChannel,
     // IndexChannel,
     // PortfolioChannel,
     // ResumeChannel,
-    TVFrame
-  }
-}
+    TVFrame,
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -47,39 +43,36 @@ $screen-background: #121010;
   bottom: 0;
   right: 0;
   content: " ";
-  }
+}
 @mixin center {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate3d(-50%, -50%, 0);
-  }
+}
 @mixin flexCenter {
   display: flex;
   align-items: center;
   justify-content: center;
-  }
-body{
+}
+body {
   background: $secondary none repeat scroll 0 0;
   margin: 0;
   overflow: hidden;
   //height: 50vh;
   //width: 50vw;
-  }
+}
 // background when TV is off
 .screen:before {
   background: transparent;
-  background: linear-gradient(to bottom, #85908c 0%, #323431 100%)
-  repeat
-  scroll
-  0
-  0;
+  background: linear-gradient(to bottom, #85908c 0%, #323431 100%) repeat scroll
+    0 0;
   content: "";
   @include center;
   width: 96%;
   height: 96%;
   z-index: -1;
-  }
+}
 // CRT scanlines
 .scanlines .overlay {
   height: 96%;
@@ -99,27 +92,27 @@ body{
     pointer-events: none;
     width: 98%;
     height: 98%;
-    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/86186/crt.png');
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/86186/crt.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     content: "";
-    }
+  }
   &:before {
     @include pseudo;
     background: linear-gradient(
-            transparentize($screen-background, 1) 50%,
-            transparentize(darken($screen-background, 10), 0.75) 50%
-    ),
-    linear-gradient(
-            90deg,
-            transparentize(#ff0000, 0.94),
-            transparentize(#00ff00, 0.98),
-            transparentize(#0000ff, 0.94)
-    );
+        transparentize($screen-background, 1) 50%,
+        transparentize(darken($screen-background, 10), 0.75) 50%
+      ),
+      linear-gradient(
+        90deg,
+        transparentize(#ff0000, 0.94),
+        transparentize(#00ff00, 0.98),
+        transparentize(#0000ff, 0.94)
+      );
     z-index: 2;
     background-size: 100% 2px, 3px 100%;
-    }
   }
+}
 .picture {
   height: 96vh;
   overflow: hidden;
@@ -127,10 +120,7 @@ body{
   z-index: -1;
   transform: scale(0, 0);
   background: transparent;
-  background: linear-gradient(to bottom, #85908c 0%, #323431 100%)
-  repeat
-  scroll
-  0
-  0;
-  }
+  background: linear-gradient(to bottom, #85908c 0%, #323431 100%) repeat scroll
+    0 0;
+}
 </style>
