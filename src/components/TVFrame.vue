@@ -4,8 +4,8 @@
 
 <script>
 export default {
-  name: 'TVFrame'
-}
+  name: "TVFrame",
+};
 </script>
 
 <style scoped lang="scss">
@@ -18,15 +18,17 @@ export default {
   background-color: rebeccapurple;
   z-index: 2;
 
-  clip-path: polygon(0% 0%,
-      0% 100%,
-      3% 100%,
-      3% 3%,
-      97% 3%,
-      97% 97%,
-      3% 97%,
-      3% 100%,
-      100% 100%,
-      100% 0%);
-  }
+  clip-path: polygon(
+    0% 0%,
+    0% 100%,
+    3% 100%,
+    3% 3%,
+    97% 3%,
+    97% 97%,
+    3% 97%,
+    3% 100%,
+    100% 100%,
+    100% 0%
+  );
+}
 </style>

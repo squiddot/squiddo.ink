@@ -6,16 +6,16 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: "HelloWorld",
   props: {
-    msg: String
-  }
-}
+    msg: String,
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-@import 'https://fonts.googleapis.com/css?family=Nova+Round:100,300,400,500,700,900';
+@import "https://fonts.googleapis.com/css?family=Nova+Round:100,300,400,500,700,900";
 .container {
   height: 100vh;
   background: #1e283d;
@@ -27,12 +27,12 @@ export default {
   color: #ffffff;
   font-size: 10em;
   position: relative;
-  font-family: 'Nova Round';
+  font-family: "Nova Round";
   font-weight: 700;
 }
 .container .glitch::before,
 .container .glitch::after {
-  content: 'squiddo.ink';
+  content: "squiddo.ink";
   position: absolute;
   top: 0;
   left: 0;
@@ -311,5 +311,4 @@ export default {
     clip: rect(54px, 9999px, 79px, 0);
   }
 }
-
 </style>
