@@ -1,5 +1,5 @@
 <template>
-  <div class="channel">
+  <div>
     <h1>Index Channel</h1>
     <h2>31 Years Alive. 29 of those spent banging on a keyboard.</h2>
     <p>
