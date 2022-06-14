@@ -201,10 +201,10 @@ body > div:first-child h2 {
   padding: 0;
 }
 
-div + div article {
-  pointer-events: all;
-  // NOTE: This is super important since the parent component has pointer-events set to none.
-}
+//div + div article {
+//  pointer-events: all;
+//  // NOTE: This is super important since the parent component has pointer-events set to none.
+//}
 
 /* Hover interaction */
 

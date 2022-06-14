@@ -120,4 +120,8 @@ body {
   background: linear-gradient(to bottom, #85908c 0%, #323431 100%) repeat scroll
     0 0;
 }
+
+.channel {
+  pointer-events: all;
+}
 </style>
