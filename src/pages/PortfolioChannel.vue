@@ -122,18 +122,6 @@
 $highlight: #5bc0eb;
 $darkhighlight: #fde74c;
 
-//html {
-//  font-size: 1em;
-//  line-height: 1;
-//  animation-name: textflicker;
-//  animation-duration: 0.01s;
-//  animation-iteration-count: infinite;
-//  animation-direction: alternate;
-//  letter-spacing: 0.125em;
-//  color: #eee;
-//  text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
-//}
-
 .portfolio-wrapper {
   overflow: scroll;
   height: 100vh;
@@ -240,13 +228,4 @@ h1 {
     }
   }
 }
-
-//@keyframes textflicker {
-//  from {
-//    text-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;
-//  }
-//  to {
-//    text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
-//  }
-//}
 </style>
