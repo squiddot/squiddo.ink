@@ -1,7 +1,8 @@
 <template>
   <div class="channel">
+    <canvas id="canvas" ref="canvas" class="picture"></canvas>
     <div class="overlay">
-      <div class="text">
+      <div ref="text" class="text">
         <span>AV-1</span>
       </div>
       <div class="menu">

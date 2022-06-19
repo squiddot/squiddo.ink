@@ -2,10 +2,10 @@ import { createRouter, createWebHistory } from "vue-router";
 
 // 1. Define route components.
 // These can be imported from other files
-const IndexChannel = () => import("./pages/IndexChannel.vue");
-const MenuChannel = () => import("./pages/MenuChannel.vue");
-const PortfolioChannel = () => import("./pages/PortfolioChannel.vue");
-const ResumeChannel = () => import("./pages/ResumeChannel.vue");
+const IndexChannel = () => import("./pages");
+const MenuChannel = () => import("./pages/Menu.vue");
+const PortfolioChannel = () => import("./pages/About.vue");
+const ResumeChannel = () => import("./pages/ColorBars.vue");
 const Off = () => import("./pages/Off.vue");
 
 // 2. Define some routes

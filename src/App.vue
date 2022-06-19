@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import TV from "./components/TV.vue";
+import TV from "./components/TVScreen.vue";
 
 export default {
   name: "App",
