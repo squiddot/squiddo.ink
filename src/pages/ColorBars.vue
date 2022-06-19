@@ -8,23 +8,23 @@
     </div>
     <div>
       <article>
-        <h2>Personal</h2>
+        <h2>cyan</h2>
         <div></div>
       </article>
       <article id="thr">
-        <h2>Skills</h2>
+        <h2>lime</h2>
         <div></div>
       </article>
       <article id="fri">
-        <h2>Experience</h2>
+        <h2>magenta</h2>
         <div></div>
       </article>
       <article id="Sat">
-        <h2>Education</h2>
+        <h2>red</h2>
         <div></div>
       </article>
       <article id="sun">
-        <h2>Projects</h2>
+        <h2>blue</h2>
         <div></div>
       </article>
     </div>

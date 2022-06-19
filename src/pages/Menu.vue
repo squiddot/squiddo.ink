@@ -9,14 +9,12 @@
         <header>Main Menu</header>
         <ul>
           <li class="active">
-            <a href="https://www.linkedin.com/in/taylorcgaines/" title=""
-              >LinkedIn</a
-            >
+            <a href="#" title="">LinkedIn</a>
           </li>
           <li><router-link to="/about">About</router-link></li>
-          <li><a href="" title="">Resume</a></li>
+          <li><a href="#" title="">Resume</a></li>
           <li><a href="https://github.com/squiddot" title="">Github</a></li>
-          <li><a href="mailto:taylorcgaines@gmail.com" title="">Contact</a></li>
+          <li><a href="#" title="">Contact</a></li>
         </ul>
         <footer>
           <div class="key">Exit: <span>1</span></div>
