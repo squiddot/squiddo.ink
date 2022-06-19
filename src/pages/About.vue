@@ -117,62 +117,13 @@
               </p>
             </div>
           </div>
-          <p>
-            All who enjoy the craft of writing CSS are welcome to contribute!
-          </p>
-          <p>
-            By participating as a contributor, your work will be shared with
-            your provided attribution as long as Style Stage is online, your
-            stylesheet link and any asset links remain valid, and all
-            <a href="/guidelines/">contributor guidelines</a> are adhered to.
-          </p>
         </section>
         <section class="container">
           <h3>Steps to Contribute</h3>
-          <ol>
-            <li>
-              Download the source files listed below to use as a reference to
-              build your stylesheet.
-            </li>
-            <li>
-              Host your completed stylesheet at a public URL, and ensure all
-              asset links are absolute URLs to external resources.
-            </li>
-            <li>
-              <a href="https://github.com/5t3ph/stylestage"
-                >Create a pull request</a
-              >
-              to add your information as a unique .json file to:
-              src/_data/styles. The schema is detailed in the repo README, and
-              you can review the FAQ on
-              <a href="/guidelines/#how-do-i-create-a-pull-request-pr"
-                >creating a pull request</a
-              >.
-            </li>
-            <li>
-              If your contribution abides by the previously listed guidelines,
-              your submission will be added!
-            </li>
-          </ol>
         </section>
         <footer id="contact">
           <div class="container">
-            <h3>Source Files</h3>
-            <a href="/source-files/style.css" class="link-downloadcss" download
-              >Download CSS</a
-            >
-            <a
-              href="/source-files/stylestage.html"
-              class="link-downloadhtml"
-              download
-              >Download HTML</a
-            >
-            <a
-              href="https://codepen.io/5t3ph/pen/b493845ae41e836889dd84fdbb0f5291"
-              class="link-codepen"
-              download
-              >Fork the CodePen</a
-            >
+            <h3>Contact</h3>
           </div>
         </footer>
       </article>

@@ -4,9 +4,9 @@
     <main ref="main" class="scanlines">
       <div class="screen">
         <div class="overlay">
-          <div class="channel">
-            <RouterView></RouterView>
-          </div>
+          <!--          <div class="channel">-->
+          <RouterView></RouterView>
+          <!--          </div>-->
         </div>
       </div>
     </main>
@@ -52,8 +52,6 @@ body {
   overflow: hidden;
   margin: 0;
   background: $secondary none repeat scroll 0 0;
-  //height: 50vh;
-  //width: 50vw;
 }
 
 // background when TV is off
@@ -108,20 +106,5 @@ body {
       );
     background-size: 100% 2px, 3px 100%;
   }
-}
-
-.picture {
-  z-index: -1;
-  overflow: hidden;
-  width: 96vw;
-  height: 96vh;
-  transform: scale(0, 0);
-  background: transparent;
-  background: linear-gradient(to bottom, #85908c 0%, #323431 100%) repeat scroll
-    0 0;
-}
-
-.channel {
-  pointer-events: all;
 }
 </style>

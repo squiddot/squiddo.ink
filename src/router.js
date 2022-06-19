@@ -4,8 +4,8 @@ import { createRouter, createWebHistory } from "vue-router";
 // These can be imported from other files
 const IndexChannel = () => import("./pages");
 const MenuChannel = () => import("./pages/Menu.vue");
-const PortfolioChannel = () => import("./pages/About.vue");
-const ResumeChannel = () => import("./pages/ColorBars.vue");
+const AboutChannel = () => import("./pages/About.vue");
+const ColorBarsChannel = () => import("./pages/ColorBars.vue");
 const Off = () => import("./pages/Off.vue");
 
 // 2. Define some routes
@@ -31,15 +31,15 @@ const routes = [
     // meta: { buttonName: 'Home' }
   },
   {
-    path: "/portfolio",
-    name: "Portfolio",
-    component: PortfolioChannel,
+    path: "/about",
+    name: "About",
+    component: AboutChannel,
     // meta: { buttonName: 'Home' }
   },
   {
-    path: "/resume",
-    name: "Resume",
-    component: ResumeChannel,
+    path: "/colorbars",
+    name: "Color Bars",
+    component: ColorBarsChannel,
     // meta: { buttonName: 'Home' }
   },
   {

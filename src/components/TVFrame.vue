@@ -4,8 +4,8 @@
       <router-link to="/">Off</router-link>
       <router-link to="/on">On</router-link>
       <router-link to="/menu">Menu</router-link>
-      <router-link to="/resume">Resume</router-link>
-      <router-link to="/portfolio">Portfolio</router-link>
+      <router-link to="/about">About</router-link>
+      <router-link to="/colorbars">Color Bars</router-link>
     </nav>
   </div>
 </template>
