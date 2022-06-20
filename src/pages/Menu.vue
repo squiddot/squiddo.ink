@@ -31,8 +31,6 @@ export default {
   data() {
     return {
       frame: 0,
-      idx: 0,
-      toggle: true,
       windowWidth: 0,
     };
   },
@@ -55,7 +53,7 @@ export default {
       this.$refs["channel"].classList.add("on");
       this.$refs["channel"].classList.remove("off");
       this.animate();
-    }, 1000);
+    }, 0);
   },
   updated() {},
   methods: {
@@ -81,12 +79,14 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 $secondary: #1b2838;
 $screen-background: #121010;
 $color: lime;
 $font-family: "Terminal";
 $font-size: 20px;
+$delay: 2000ms;
+
 @mixin pseudo {
   position: absolute;
   top: 0;
@@ -106,24 +106,6 @@ $font-size: 20px;
   align-items: center;
   justify-content: center;
 }
-//.tv-screen {
-//  background: $secondary none repeat scroll 0 0;
-//  margin: 0;
-//  overflow: hidden;
-//  height: 100vh;
-//  width: 100vw;
-//}
-// background when TV is off
-//.screen::before {
-//  background: transparent linear-gradient(to bottom, #85908c 0%, #323431 100%)
-//    repeat scroll 0 0;
-//  content: "";
-//  width: 100%;
-//  height: 100%;
-//  z-index: -1;
-//  @include center;
-//}
-//CRT scanlines
 .channel-content {
   height: 100%;
   left: 0;
@@ -210,13 +192,8 @@ $font-size: 20px;
   }
 }
 .on .picture {
-  animation: 3000ms linear 0ms normal forwards 1 running on;
+  animation: 0ms linear 0ms normal forwards 1 running on;
 }
-.off .picture {
-  animation: 750ms cubic-bezier(0.23, 1, 0.32, 1) 0ms normal forwards 1 running
-    off;
-}
-$delay: 2000ms;
 .text {
   color: lime;
   content: "AV-1";
@@ -234,7 +211,7 @@ $delay: 2000ms;
   .text,
   .menu {
     opacity: 1;
-    transition: opacity 10ms ease 2000ms;
+    transition: opacity 10ms ease 1000ms;
   }
 }
 @keyframes on {
@@ -266,25 +243,6 @@ $delay: 2000ms;
     opacity: 1;
   }
 }
-//@keyframes off {
-//  0% {
-//    transform: scale(1, 1);
-//    filter: brightness(1);
-//  }
-//  40% {
-//    transform: scale(1, 0.005);
-//    filter: brightness(100);
-//  }
-//  70% {
-//    transform: scale(1, 0.005);
-//  }
-//  90% {
-//    transform: scale(0.005, 0.005);
-//  }
-//  100% {
-//    transform: scale(0, 0);
-//  }
-//}
 .text span {
   filter: blur(1px);
   position: absolute;
