@@ -2,7 +2,8 @@
   <div ref="channel" class="channel">
     <canvas id="canvas" ref="canvas" class="picture"></canvas>
     <div class="channel-content">
-      <h1>Index Channel</h1>
+      <SplashBanner></SplashBanner>
+      <ScrollingGrid></ScrollingGrid>
     </div>
 
     <!--    <h2>31 Years Alive. 29 of those spent banging on a keyboard.</h2>-->
@@ -16,7 +17,12 @@
 </template>
 
 <script>
+import ScrollingGrid from "@/components/ScrollingGrid";
+import SplashBanner from "@/components/SplashBanner";
+
 export default {
+  components: { ScrollingGrid, SplashBanner },
+
   data() {
     return {
       frame: 0,
@@ -63,9 +69,14 @@ $delay: 2000ms;
   align-items: center;
   justify-content: center;
 }
+
+.channel {
+  overflow: hidden;
+}
 .channel-content {
   height: 100%;
   left: 0;
+  background-color: rgb(20, 20, 20);
   position: absolute;
   top: 0;
   width: 100%;
@@ -74,9 +85,9 @@ $delay: 2000ms;
   @include flexCenter;
 }
 .picture {
-  height: 100vh;
-  overflow: hidden;
-  width: 100vw;
+  height: 96vh;
+  //overflow: hidden;
+  width: 96vw;
   z-index: -1;
   transform: scale(0, 0);
   background: transparent linear-gradient(to bottom, #85908c 0%, #323431 100%)
@@ -86,7 +97,7 @@ $delay: 2000ms;
   animation: 3000ms linear 0ms normal forwards 1 running on;
 }
 .on .channel-content {
-  transition: opacity 10ms ease 2000ms;
+  transition: opacity 500ms ease-in 500ms;
   opacity: 1;
 }
 @keyframes on {

@@ -57,8 +57,8 @@ body {
 // background when TV is off
 .screen:before {
   z-index: -1;
-  width: 96%;
-  height: 96%;
+  width: 100%;
+  height: 100%;
   @include center;
   content: "";
   background: transparent;
@@ -78,12 +78,15 @@ body {
   pointer-events: none;
 
   &:after {
+    //TODO: Take this out
+    //display: none;
     position: absolute;
     z-index: 2;
-    top: 1%;
-    left: 1%;
-    width: 98%;
-    height: 98%;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     content: "";
     pointer-events: none;
     background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/86186/crt.png");
