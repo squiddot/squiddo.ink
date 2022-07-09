@@ -49,7 +49,7 @@ $screen-background: #121010;
 }
 
 body {
-  overflow: hidden;
+  position: relative;
   margin: 0;
   background: $secondary none repeat scroll 0 0;
 }
@@ -68,7 +68,7 @@ body {
 
 // CRT scanlines
 .scanlines .overlay {
-  position: fixed;
+  position: relative;
   z-index: 1;
   top: 0;
   left: 0;
@@ -109,5 +109,8 @@ body {
   }
 }
 .channel {
+  position: static;
+  overflow: scroll;
+  width: 95%;
 }
 </style>
