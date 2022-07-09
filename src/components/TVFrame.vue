@@ -20,6 +20,7 @@ export default {
 <style lang="scss" scoped>
 .frame {
   position: fixed;
+  display: none;
   z-index: 2;
   top: -5px;
   right: -5px;
@@ -33,8 +34,8 @@ export default {
     3% 100%,
     3% 3%,
     97% 3%,
-    97% 97%,
-    3% 97%,
+    97% 93%,
+    3% 93%,
     3% 100%,
     100% 100%,
     100% 0%

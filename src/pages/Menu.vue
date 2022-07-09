@@ -116,9 +116,9 @@ $delay: 2000ms;
   @include flexCenter;
 }
 .picture {
-  height: 100vh;
+  height: 91vh;
   overflow: hidden;
-  width: 100vw;
+  width: 95vw;
   z-index: -1;
   transform: scale(0, 0);
   background: transparent linear-gradient(to bottom, #85908c 0%, #323431 100%)

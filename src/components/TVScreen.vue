@@ -4,9 +4,9 @@
     <main ref="main" class="scanlines">
       <div class="screen">
         <div class="overlay">
-          <!--          <div class="channel">-->
-          <RouterView></RouterView>
-          <!--          </div>-->
+          <div class="channel">
+            <RouterView></RouterView>
+          </div>
         </div>
       </div>
     </main>
@@ -68,12 +68,12 @@ body {
 
 // CRT scanlines
 .scanlines .overlay {
-  position: absolute;
+  position: fixed;
   z-index: 1;
   top: 2%;
   left: 2%;
   width: 96%;
-  height: 96%;
+  height: 92%;
   @include flexCenter;
   pointer-events: none;
 
@@ -109,5 +109,10 @@ body {
       );
     background-size: 100% 2px, 3px 100%;
   }
+}
+.channel {
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
 </style>
