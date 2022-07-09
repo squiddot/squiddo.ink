@@ -70,16 +70,14 @@ body {
 .scanlines .overlay {
   position: fixed;
   z-index: 1;
-  top: 2%;
-  left: 2%;
-  width: 96%;
-  height: 92%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   @include flexCenter;
   pointer-events: none;
 
   &:after {
-    //TODO: Take this out
-    //display: none;
     position: absolute;
     z-index: 2;
 
@@ -111,8 +109,5 @@ body {
   }
 }
 .channel {
-  position: absolute;
-  height: 100%;
-  width: 100%;
 }
 </style>
