@@ -1,5 +1,5 @@
 <template>
-  <TVFrame></TVFrame>
+  <!--  <TVFrame></TVFrame>-->
   <div class="tv">
     <main ref="main" class="scanlines">
       <div class="screen">
@@ -14,11 +14,11 @@
 </template>
 
 <script>
-import TVFrame from "./TVFrame.vue";
+// import TVFrame from "./TVFrame.vue";
 
 export default {
   components: {
-    TVFrame,
+    // TVFrame,
   },
 };
 </script>
@@ -48,19 +48,16 @@ $screen-background: #121010;
   justify-content: center;
 }
 
-body {
+.tv {
   position: relative;
-  margin: 0;
-  background: $secondary none repeat scroll 0 0;
+  width: 95%;
+  left: 2.5%;
 }
 
 // background when TV is off
 .screen:before {
   z-index: -1;
-  width: 100%;
-  height: 100%;
-  @include center;
-  content: "";
+  @include pseudo;
   background: transparent;
   background: linear-gradient(to bottom, #85908c 0%, #323431 100%) repeat scroll
     0 0;
@@ -68,24 +65,13 @@ body {
 
 // CRT scanlines
 .scanlines .overlay {
-  position: relative;
   z-index: 1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   @include flexCenter;
   pointer-events: none;
 
   &:after {
-    position: absolute;
+    @include pseudo;
     z-index: 2;
-
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    content: "";
     pointer-events: none;
     background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/86186/crt.png");
     background-repeat: no-repeat;
@@ -110,7 +96,6 @@ body {
 }
 .channel {
   position: static;
-  overflow: scroll;
-  width: 95%;
+  //width: 94%;
 }
 </style>

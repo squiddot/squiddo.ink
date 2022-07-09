@@ -20,12 +20,11 @@ export default {
 <style lang="scss" scoped>
 .frame {
   position: fixed;
-  display: none;
-  z-index: 2;
-  top: -5px;
-  right: -5px;
-  bottom: -5px;
-  left: -5px;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-color: rebeccapurple;
 
   clip-path: polygon(

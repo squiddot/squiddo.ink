@@ -1,5 +1,5 @@
 <template>
-  <div ref="channel" class="channel">
+  <div ref="channel">
     <canvas id="canvas" ref="canvas" class="picture"></canvas>
     <div class="channel-content">
       <div ref="text" class="text">

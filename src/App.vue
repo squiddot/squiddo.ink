@@ -1,13 +1,16 @@
 <template>
+  <TVFrame></TVFrame>
   <TV />
 </template>
 
 <script>
 import TV from "./components/TVScreen.vue";
+import TVFrame from "@/components/TVFrame";
 
 export default {
   name: "App",
   components: {
+    TVFrame,
     TV,
   },
 };
